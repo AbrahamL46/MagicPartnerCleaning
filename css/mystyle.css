@@ -59,6 +59,108 @@ body {
     margin: 0 auto 20px auto
 }
 
+/* HERO STYLES */
+.hero-section {
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+        url('https://github.com/AbrahamL46/MagicPartnerCleaning/blob/master/images/8040816%5B1%5D.jpg?raw=true') 
+        center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+    position: relative;
+}
+
+.hero-text-left {
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.service-feature-box {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-feature-box img {
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+.service-feature-box h2 {
+    margin-top: 0;
+}
+
+.hero-text-left h1,
+.hero-text-left h2, 
+.hero-text-left p {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text-left h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text-left h2 {
+    margin-top: 20px;
+}
+
+.hero-text-left p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* INFO CARDS */
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.card .material-symbols-outlined {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* SERVICE IMAGE SECTION */
 .service-highlight {
     display: flex;
     align-items: center;
@@ -91,6 +193,7 @@ body {
     line-height: 1.6;
 }
 
+/* ICONS SECTION */
 .icon-text {
     display: flex;
     flex-wrap: wrap;
@@ -110,9 +213,4 @@ body {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
     font-size: 32px;
     color: blue;
-}
-
-/*
-.payment {
-    font-size: 50px;
 }
