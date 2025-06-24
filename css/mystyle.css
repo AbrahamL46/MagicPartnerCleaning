@@ -45,7 +45,7 @@ html {
 .home, .contact, .about {
     text-align: center;
     padding: 16px;
-    margin-top: 30px;
+    margin-top: 0px;
     height: fixed;
 }
 
@@ -160,6 +160,18 @@ html {
     max-width: 250px;
     text-align: center;
     flex: 1 1 200px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.card-link:hover .card {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); 
+    transform: scale(1.02);
+    transition: all 0.3 ease;
 }
 
 .card .material-symbols-outlined {
