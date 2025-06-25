@@ -65,6 +65,10 @@ html {
     background-color: #f9f9f9;
 }
 
+.messagebox {
+    justify-content: center;
+}
+
 .about {
     background-color: #f9f9f9;
 }

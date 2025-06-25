@@ -21,9 +21,21 @@
         <!-- PAGE CONTENT -->
         <div class="page-content contact">
             <h1>Contact Us</h1>
-            <h2>Questions? Feel free to contact us through email or call!</h2>
+            <h2>Questions? Feel free to contact us through email!</h2>
             <p>Email: email@gmail.com</p>
-            <p>Phone: (626) 353-1661</p>
+            <form action="/dummy.txt">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <div class="messagebox">
+                    <label for="textbox">Enter Message</label><br>
+                    <textarea name="textbox"></textarea><br>
+                </div>
+                <input type="submit" id="textbox" value="Submit">
+            </form>
         </div>
         
     </body>
