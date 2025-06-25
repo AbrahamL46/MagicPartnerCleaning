@@ -20,7 +20,7 @@
         </div>
 
         <!-- PAGE CONTENT -->
-        <div class="page-content contact" id="fade-target">
+        <div class="page-content contact" id="contact-fade-target">
             <h1>Contact Us</h1>
             <h2>Questions? Feel free to contact us through email!</h2>
             <form action="/dummy.txt">
@@ -49,7 +49,7 @@
         </div>
         
         <script>
-            const fadeTarget = document.getElementById("fade-target");
+            const fadeTarget = document.getElementById("contact-fade-target");
 
             if(!sessionStorage.getItem("contactPageSeen")) {
                 fadeTarget.classList.add("fade-in");

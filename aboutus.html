@@ -6,6 +6,7 @@
         <title>Maggie's Magic Cleaning - About Us</title>
         <link rel="stylesheet" href = "css/mystyle.css">
         <link rel="stylesheet" href = "https://fonts.googleapis.com/css2?family=Inter">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     </head>
     <body>
 
@@ -19,21 +20,21 @@
         </div>
 
         <!-- PAGE CONTENT -->
-         <div class="page-content about" id="fade-target">
+         <div class="page-content about" id="about-fade-target">
             <h1>About Us</h1>
             <p>We offer office cleaning services in southern California. We operate anywhere within these areas.</p>
-            <br>
-            <p>Arcadia</p>
-            <p>Monrovia</p>
-            <p>Pasadena</p>
-            <p>San Gabriel</p>
-            <p>San Marino</p>
-            <p>Temple City</p>
-            <p></p>
+            <hr class="section-divider">
+            <ul class="city-list">
+                <li><span class="material-symbols-outlined">location_on</span> Arcadia</li>
+                <li><span class="material-symbols-outlined">location_on</span> Monrovia</li>
+                <li><span class="material-symbols-outlined">location_on</span> Pasadena</li>
+                <li><span class="material-symbols-outlined">location_on</span> San Marino</li>
+                <li><span class="material-symbols-outlined">location_on</span> Temple City</li>
+            </ul>
          </div>
         
     <script>
-        const fadeTarget = document.getElementById("fade-target");
+        const fadeTarget = document.getElementById("about-fade-target");
 
         if(!sessionStorage.getItem("aboutPageSeen")) {
             fadeTarget.classList.add("fade-in");
