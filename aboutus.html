@@ -19,9 +19,9 @@
         </div>
 
         <!-- PAGE CONTENT -->
-         <div class="page-content about">
+         <div class="page-content about" id="fade-target">
             <h1>About Us</h1>
-            <p>We offer office cleaning services in southern California. We are operate anywhere within these areas.</p>
+            <p>We offer office cleaning services in southern California. We operate anywhere within these areas.</p>
             <br>
             <p>Arcadia</p>
             <p>Monrovia</p>
@@ -32,5 +32,14 @@
             <p></p>
          </div>
         
+    <script>
+        const fadeTarget = document.getElementById("fade-target");
+
+        if(!sessionStorage.getItem("aboutPageSeen")) {
+            fadeTarget.classList.add("fade-in");
+            sessionStorage.setItem("aboutPageSeen", "true");
+        }
+    </script>
+
     </body>
 </html>
