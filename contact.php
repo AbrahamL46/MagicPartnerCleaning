@@ -66,8 +66,7 @@
             $body .= "Email: $email\n";
             $body .= "Message:\n$textbox";
 
-            $headers = "From: no-reply@gmail.com";
-            $headers = "Reply-To: $email\r\n";
+            $headers = "From: no-reply@gmail.com\r\nReply-To: $email\r\n";
 
             if(mail($to, $subject, $body, $headers)) {
                 echo "<p class='success'>Message sent successfully!</p>";
@@ -91,7 +90,7 @@
         <!-- NAVIGATION BAR -->
         <div class="topnav">
             <div class="topnav-right">
-                <a href="main.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="aboutus.html">About Us</a>
                 <a class="active" href="contact.html">Contact Us</a>
             </div>
@@ -137,7 +136,7 @@
             echo "<br>";
             echo $email;
             echo "<br>";
-            echo $comment;
+            echo $texbox;
             ?>
 
         </div>
