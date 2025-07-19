@@ -16,11 +16,12 @@
     $fname = $lname = $email = $textbox = "";
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
+        echo "<p style='color:blue;'>Form was submitted</p>"; //TEST OUTPUT
         if(empty($_POST["fname"])) {
             $fnameErr = "First name required";
         }
         else {
-            $name = test_input($_POST["fname"]);
+            $fname = test_input($_POST["fname"]);
             //check for only letters and whitespace
             if(!preg_match("/^[a-zA-z-' ]*$/", $fname)) {
                 $fnameErr = "Only letters and white space allowed";
@@ -66,7 +67,7 @@
             $body .= "Email: $email\n";
             $body .= "Message:\n$textbox";
 
-            $headers = "From: no-reply@gmail.com\r\nReply-To: $email\r\n";
+            $headers = "From: abrahamlovescoc@gmail.com\r\nReply-To: $email\r\n";
 
             if(mail($to, $subject, $body, $headers)) {
                 echo "<p class='success'>Message sent successfully!</p>";
@@ -92,7 +93,7 @@
             <div class="topnav-right">
                 <a href="index.html">Home</a>
                 <a href="aboutus.html">About Us</a>
-                <a class="active" href="contact.html">Contact Us</a>
+                <a class="active" href="contact.php">Contact Us</a>
             </div>
         </div>
 
@@ -101,7 +102,7 @@
             <h1>Contact Us</h1>
             <h2>Questions? Feel free to contact us through email!</h2>
             <p><span class="error">* required field</p>
-            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form method="POST" action="sendmail.php">
                 <div class="form">
                     <div class="form-group">
                         <label for="fname">First Name</label><br>
@@ -136,7 +137,7 @@
             echo "<br>";
             echo $email;
             echo "<br>";
-            echo $texbox;
+            echo $textbox;
             ?>
 
         </div>
