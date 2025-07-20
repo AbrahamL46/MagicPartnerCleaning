@@ -20,6 +20,10 @@
         $mail -> Port = 465;
         
         //From & To
+        $mail -> setFrom(SMTP_USERNAME, "Maggies Magic Cleaning");
+        $mail -> addAddress(MAIL_TO_ADDRESS);
+        $mail -> addReplyTo($_POST['email'], $_POST['fname']);
+
         $mail -> isHTML(false);
         $mail -> Subject = 'New Contact Form Submission';
         $mail -> Body = 
